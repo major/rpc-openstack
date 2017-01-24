@@ -1,8 +1,8 @@
 type: agent.plugin
 label: "disk_utilisation--{{ ansible_hostname }}"
 disabled    : false
-period      : "{{ maas_check_period }}"
-timeout     : "{{ maas_check_timeout }}"
+period      : "{{ maas_check_period_override['disk_utilisation'] | default(maas_check_period) }}"
+timeout     : "{{ maas_check_timeout_override['disk_utilisation'] | default(maas_check_timeout) }}"
 details     :
     file    : run_plugin_in_venv.sh
     args    : ["{{ maas_plugin_dir }}disk_utilisation.py", "{{ ansible_ssh_host }}"]
