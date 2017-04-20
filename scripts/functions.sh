@@ -18,12 +18,12 @@
 export ADMIN_PASSWORD=${ADMIN_PASSWORD:-"secrete"}
 export DEPLOY_AIO=${DEPLOY_AIO:-"no"}
 export DEPLOY_OA=${DEPLOY_OA:-"yes"}
-export DEPLOY_ELK=${DEPLOY_ELK:-"yes"}
+export DEPLOY_ELK=${DEPLOY_ELK:-"no"}
 export DEPLOY_MAAS=${DEPLOY_MAAS:-"no"}
 export DEPLOY_TEMPEST=${DEPLOY_TEMPEST:-"no"}
 export DEPLOY_RALLY=${DEPLOY_RALLY:-"no"}
 export DEPLOY_CEPH=${DEPLOY_CEPH:-"no"}
-export DEPLOY_SWIFT=${DEPLOY_SWIFT:-"yes"}
+export DEPLOY_SWIFT=${DEPLOY_SWIFT:-"no"}
 export DEPLOY_MAGNUM=${DEPLOY_MAGNUM:-"no"}
 export DEPLOY_HARDENING=${DEPLOY_HARDENING:-"yes"}
 export DEPLOY_RPC=${DEPLOY_RPC:-"yes"}
